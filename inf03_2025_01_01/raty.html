@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursy komputerowe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="baner.png" alt="kursy komputerowe">
+    </header>
+
+
+     <menu>
+        <a href="index.php" class="odsyl">Strona główna</a>
+        <a href="raty.html" class="odsyl">Koszt rat</a>
+        <a href="https://moje-szkolenia,pl/" class="odsyl">Nasz partner</a>
+    </menu>
+
+
+    <main>
+        <h3>Oblicz miesięczną rate</h3>
+        <label for="react">Kurs React.js<input type="checkbox" name="react" id="react" class="kontrolki" value="5000"></label>
+        <label for="JS">Kurs JavaScript<input type="checkbox" name="JS" id="JS" class="kontrolki" value="3000"></label>
+        <label for="raty">Liczba rat: <input type="number" name="raty" id="raty" class="kontrolki"></label>
+        <select id="Miasto" class="kontrolki">
+            <option value="Warszawa">Warszawa</option>
+            <option value="Katowice">Katowice</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select>
+        <button type="button" onclick="skrypt1()" class="kontrolki">Oblicz</button>
+        <p id="wynik"></p>
+    </main>
+
+
+    <footer>
+        <p>Autor strony: brr brr</p>
+    </footer>
+    <script>
+        function skrypt1(){
+            let react = document.querySelector("#react").value
+            let JS = document.querySelector("#JS").value
+            let react_sprawdz = document.querySelector("#react").checked
+            let JS_sprawdz = document.querySelector("#JS").checked
+            let raty = document.querySelector("#raty").value
+            let miasto = document.querySelector("#Miasto").value
+            if(react_sprawdz && JS_sprawdz){
+                let kwota = Number(react) + Number(JS)
+                let kwota_raty = Math.ceil(kwota/raty)
+                document.querySelector("#wynik").innerHTML=`Kurs odbędzie się w ${miasto}. Koszt całkowity: ${kwota}zł. Płacisz ${raty} rat po ${kwota_raty}`
+            }
+            else if(react_sprawdz){
+                let kwota = react
+                let kwota_raty = Math.ceil(kwota/raty)
+                document.querySelector("#wynik").innerHTML=`Kurs odbędzie się w ${miasto}. Koszt całkowity: ${kwota}zł. Płacisz ${raty} rat po ${kwota_raty}`
+            }
+            else if(JS_sprawdz){
+                let kwota = JS
+                let kwota_raty = Math.ceil(kwota/raty)
+                document.querySelector("#wynik").innerHTML=`Kurs odbędzie się w ${miasto}. Koszt całkowity: ${kwota}zł. Płacisz ${raty} rat po ${kwota_raty}`
+            }
+            else{
+                document.querySelector("#wynik").innerHTML=`Wprowadz poprawne dane`
+            }
+        }
+    </script>
+</body>
+</html>

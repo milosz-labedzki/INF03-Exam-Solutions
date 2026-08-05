@@ -1,0 +1,66 @@
+*{
+    font-family: Garamond;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: Tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 80px;
+}
+main{
+    width: 80%;
+    height: 600px;
+    float: left;
+}
+aside{
+    background-color: Coral;
+    width: 20%;
+    height: 680px;
+    float: right;
+}
+footer{
+    background-color: Tomato;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+img{
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#chat{
+    border: 1px tomato solid;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;
+}
+.wypowiedz_j,.wypowiedz_k{
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+.wypowiedz_j{
+    background-color: #EEE;
+    float: left;
+}
+.wypowiedz_k{
+    background-color: #CCC;
+    text-align: right;
+    float: right;
+}
+button{
+    background-color: Tomato;
+    border: 1px solid DarkRed;
+    padding: 5px;
+    font-weight: bold;
+}
+input{
+    width: 500px;
+}

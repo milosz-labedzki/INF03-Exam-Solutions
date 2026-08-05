@@ -1,0 +1,7 @@
+SELECT nazwa FROM `wycieczki` WHERE poczatek = 'Muszyna' OR poczatek = 'Wieliczka';
+
+SELECT nazwa,opis,poczatek,zrodlo FROM `zdjecia`,wycieczki WHERE zdjecia.id=wycieczki.zdjecia_id;
+
+SELECT COUNT(*) FROM wycieczki;
+
+ALTER TABLE `wycieczki` ADD `ocena` INT AFTER `koniec`;

@@ -1,0 +1,63 @@
+*{
+    font-family: Verdana;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#motor_zdj{
+    display: block;
+    position: absolute;
+    left: 15%;
+    z-index: -1;
+    width: 70%;
+}
+header{
+    background-color: rgb(60,120,160);
+    opacity: 0.9;
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
+#lewy{
+    background-color: rgb(0,100,0);
+    opacity: 0.6;
+    margin: 2%;
+    width: 75%;
+    height: 600px;
+    font-size: 120%;
+    overflow: auto;
+    box-shadow: 10px 10px 7px dimgray;
+}
+#prawy_1,#prawy_2{
+    background-color: rgb(0,100,0);
+    opacity: 0.6;
+    margin: 1%;
+    height: 300px;
+    box-shadow: 10px 10px 7px dimgray;
+}
+#prawa_kolumna{
+    width: 15%;
+}
+footer{
+    background-color: rgb(60,120,160);
+    opacity: 0.9;
+    color: white;
+    padding: 10px;
+}
+h1,h2{
+    text-align: center;
+    font-style: italic;
+}
+a,dt{
+    color: white;
+}
+dd{
+    padding: 1%;
+}
+dd:hover{
+    background-color: lightgreen;
+}
+#ulozenie{
+    display: flex;
+}

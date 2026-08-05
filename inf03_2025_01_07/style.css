@@ -1,0 +1,48 @@
+*{
+    font-family: Helvetica;
+}
+body{
+    background-color: lightsalmon;
+    text-align: center;
+}
+#lewy_gora{
+    width: 30%;
+    height: 400px;
+    float: left;
+}
+#lewy_dol{
+    background-color: darksalmon;
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+#prawy{
+    background-color: darksalmon;
+    width: 70%;
+    height: 500px;
+    overflow: auto;
+    float: right;
+    
+}
+img{
+    width: 100%;
+
+}
+#po{
+    font-style: italic;
+    padding: 10px;
+    font-size: 200%;
+    width: fit-content;
+    margin: auto;
+}
+#po:hover{
+    color: ghostwhite;
+
+}
+table,td{
+    border: 1px dotted maroon;
+}
+table{
+    width: 70%;
+    margin: auto;
+}

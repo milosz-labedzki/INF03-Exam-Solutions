@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malarz</title>
+    <link rel="stylesheet" href="styl1.css">
+</head>
+<body>
+    <header>
+            <h1>Malowanie pokoi i biur</h1>
+    </header>
+
+
+<section id="ulozenie">
+
+
+    <aside id="lewy">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="mieszamy.html">Mieszamy</a></li>
+            <li><a href="cena.html">Wyceniamy</a></li>
+        </ul>
+    </aside>
+
+
+    <section id="srodek">
+        <h2>Zapotrzebowanie na farbe</h2>
+        Powierzchnia malowania (m<sup>2</sup>)<input type="number" id="powierzchnia">
+        <button type="button" onclick="skrypt1()">Policz</button><br>
+        <span id="wynik"></span>
+    </section>
+
+
+    <aside id="prawy">
+        <img src="obraz.png" alt="Próbki farb">
+    </aside>
+
+
+</section>
+
+
+    <footer>
+        <h3>MALARZ</h3>
+        <p>Stronę opracował: brr brr</p>
+    </footer>
+    <script>
+        function skrypt1(){
+            const powierzchnia = document.querySelector("#powierzchnia").value
+            const puszka = 4;
+            const ilosc = Number(Math.ceil(powierzchnia/puszka))
+            document.querySelector("#wynik").innerHTML=`Liczba potrzebnych puszek: ${ilosc}`
+        }
+    </script>
+</body>
+</html>

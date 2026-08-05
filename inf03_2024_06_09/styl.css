@@ -1,0 +1,61 @@
+*{
+    font-family: Georgia;
+    color: white;
+}
+section{
+    float: left;
+}
+header,footer{
+    background-color: Maroon;
+    text-align: center;
+    padding: 2px;
+}
+#lewy,#srodek,#prawy{
+    background-color: lightsalmon;
+    height: 527px;
+}
+footer{
+    clear: both;
+}
+#lewy,#prawy{
+    width: 15%;
+}
+#srodek{
+    width: 70%;
+}
+#miniatury{
+    background-color: Maroon;
+    height: 70px;
+    width: 100%;
+}
+#strzalka_lewa,#strzalka_prawa{
+    background-color: lightsalmon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+.miniatura{
+    height: 70px;
+    animation-name: poruszenie;
+    animation-duration: 4s;
+}
+@keyframes poruszenie{
+    from {padding-left: 50px;}
+    to {padding-left: 0px;}
+}
+#srodkowy_obraz{
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+}
+#srodkowy_obraz:hover{
+    animation-name: powiekszenie;
+    animation-duration: 5s;
+    scale: 120%;
+}
+@keyframes powiekszenie{
+    from {scale: 100%;}
+    to {scale: 120%;}
+}

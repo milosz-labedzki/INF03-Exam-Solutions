@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header>
+        <h1>Całodobowa stacja paliw</h1>
+    </header>
+
+
+    <menu>
+        <a href="stacja.php"><img src="home.png"> </a>
+        <a href="obliczenia.html"><img src="znak.png"> </a>
+        <a href="zapytania.txt">Pobierz dokumenty</a>
+    </menu>
+
+<section>
+    <aside id="lewy">
+           <h2>Orintacyjny koszt paliwa</h2><br>
+           Rodzaj paliwa (1-benzyna, 2-olej napędowy)<br>
+           <input type="number" id="paliwo"><br>
+           Ile litrów?<br>
+           <input type="number" id="ilosc"><br>
+           <button type="button" onclick="skrypt1()">OBLICZ</button>
+           <span id="wynik"></span>
+    </aside>
+
+
+    <aside id="prawy">
+        <img src="samochod.png" alt="samochód">
+    </aside>
+
+</section>
+    <footer>
+        <p>Stronę wykonał" brr brr</p>
+    </footer>
+    <script>
+        function skrypt1(){
+            const paliwo = document.querySelector("#paliwo").value
+            const ilosc = document.querySelector("#ilosc").value
+            let koszt_l =0
+            if(paliwo==1){
+                let koszt_l =4;
+                const wartosc = koszt_l * ilosc;
+            document.querySelector("#wynik").innerHTML=`koszt paliwa: ${wartosc}`
+            }
+            else if(paliwo==2){
+                let koszt_l = 3.5;
+                const wartosc = koszt_l * ilosc;
+                document.querySelector("#wynik").innerHTML=`koszt paliwa: ${wartosc}`
+            }
+            else if(paliwo==0){
+                let koszt_l = 0;
+                const wartosc = koszt_l * ilosc;
+                document.querySelector("#wynik").innerHTML=`koszt paliwa: ${wartosc}`
+            }
+           
+        }
+    </script>
+</body>
+</html>

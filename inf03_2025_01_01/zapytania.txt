@@ -1,0 +1,7 @@
+SELECT kolor,material FROM `produkt` WHERE wysokosc_buta > 10;
+
+SELECT nazwa,cena,nazwa_kat FROM `kategorie`,buty WHERE kategorie.id_kat=buty.id_kat;
+
+CREATE USER 'Marek'@'localhost' IDENTIFIED BY 'M@rek';
+
+GRANT SELECT,UPDATE ON inf03_2025_01_01.produkt TO 'Marek'@'localhost';

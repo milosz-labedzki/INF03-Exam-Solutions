@@ -1,0 +1,7 @@
+SELECT nazwa,cena FROM `uslugi` WHERE cena > 50;
+
+SELECT AVG(cena),COUNT(*) FROM `uslugi` WHERE rodzaj =1 ORDER BY cena;
+
+CREATE USER 'kosmetyczka'@'localhost' IDENTIFIED BY 'Kosmet34';
+
+GRANT SELECT,UPDATE ON inf03_2024_01_05.uslugi TO kosmetyczka;

@@ -1,0 +1,7 @@
+SELECT imie,miot FROM `swinki` WHERE data_ur LIKE '2022-06%';
+
+SELECT DISTINCT data_ur,miot,rasa FROM `swinki`,rasy WHERE swinki.rasy_id=rasy.id AND rasy.id=1;
+
+SELECT imie,cena,opis FROM `swinki` WHERE rasy_id =1;
+
+SELECT rasa FROM `rasy` WHERE 1;

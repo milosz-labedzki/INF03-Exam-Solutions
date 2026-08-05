@@ -1,0 +1,43 @@
+*{
+    font-family: Serif;
+    text-align: center;
+}
+
+header,footer{
+    background-color: indigo;
+    color: white;
+    font-style: oblique;
+    padding: 2px;
+}
+section{
+    width: 50%;
+    height: 470px;
+    float: left;
+}
+footer{
+    clear: both;
+}
+img{
+    padding: 3px;
+    margin: 10px;
+    border: 2px dotted slateblue;
+}
+a{
+    color: white;
+}
+button{
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: indigo;
+}
+.suwak{
+    width: 300px;
+}

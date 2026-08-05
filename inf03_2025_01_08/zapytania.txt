@@ -1,0 +1,7 @@
+SELECT COUNT(*) FROM klienci;
+
+SELECT klienci.Nazwisko,klienci.Imie,zamowienia.id,zamowienia.kod_koloru,zamowienia.pojemnosc,zamowienia.data_odbioru FROM `klienci`,zamowienia WHERE klienci.id = zamowienia.id_klienta ORDER BY data_odbioru ASC;
+
+SELECT klienci.Nazwisko,klienci.Imie,zamowienia.id,zamowienia.kod_koloru,zamowienia.pojemnosc,zamowienia.data_odbioru FROM `klienci`,zamowienia WHERE klienci.id = zamowienia.id_klienta AND data_odbioru >= '2021-11-05' AND data_odbioru <= '2021-11-07' ORDER BY data_odbioru ASC;
+
+SELECT Imie,Nazwisko FROM `klienci` WHERE Plec = 'k';

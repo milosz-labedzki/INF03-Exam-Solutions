@@ -1,0 +1,7 @@
+SELECT model FROM `produkt` WHERE 1;
+
+SELECT buty.model, buty.nazwa,buty.cena,nazwa_pliku FROM `buty`,produkt WHERE buty.model=produkt.model;
+
+SELECT buty.nazwa,buty.cena,produkt.kolor,produkt.kod_produktu,produkt.material,produkt.nazwa_pliku FROM `buty`,produkt WHERE buty.model=produkt.model AND produkt.model='P-59-03';
+
+INSERT INTO `kategorie`(`nazwa_kat`) VALUES ('Sandały')

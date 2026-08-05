@@ -1,0 +1,7 @@
+SELECT `DATA`,Temat FROM `szkolenia` ORDER BY `Data` ASC;
+
+SELECT `data`,Temat,Nazwisko,Imie FROM `szkolenia`,trenerzy WHERE szkolenia.Id_trenera=trenerzy.id;
+
+SELECT Nazwisko,Imie,COUNT(Id_trenera) FROM `szkolenia`,trenerzy WHERE szkolenia.Id_trenera=trenerzy.id GROUP BY Id_trenera;
+
+ALTER TABLE `zapisy` CHANGE `Id_klienta` `Id_sluchacza` INT(11) NULL DEFAULT NULL;

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <section id="kontener">
+
+        <header>
+            <img src="animacja.gif" alt="Pogotowie komputerowe">
+        </header>
+
+
+        <menu>
+            <a href="index.php">Strona Główna</a>
+            <a href="kontakt.html">Kontakt</a>
+        </menu>
+
+<section id="ulozenie">
+        <main id="pierwszy">
+                
+        </main>
+
+
+        <main id="drugi">
+            <h2>Kontakt</h2>
+            <form action="kontakt.html">
+            <table>
+                <tr>
+                    <td>Imię:</td>
+                    <td><input type="text" id="imie"></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko:</td>
+                    <td><input type="text" id="nazwisko"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Zgłoszenie:</td>
+                    <td><select id="zgloszenie">
+                        <option value="naprawa komputerów">naprawa komputerów</option>
+                        <option value="odzodzyskiwanie danychyskiwanie">odzyskiwanie danych</option>
+                        <option value="wirusy">wirusy</option>
+                        <option value="konfiguracja LAN">konfiguracja LAN</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="kopia" checked>Wyślij kopię wiadomosci</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="reset">Czyść</button> <button type="button" onclick="skrypt1()">Wyślij</button></td>
+                </tr>
+            </table>
+            <hr>
+            <p id="wynik"></p>
+            </form>
+        </main>
+
+
+        <main id="trzeci">
+
+        </main>
+
+</section>
+        <footer>
+            <em>Autor: brr brr</em>
+        </footer>
+
+    </section>
+    <script>
+        function skrypt1(){
+            const imie = document.querySelector("#imie").value
+            const nazwisko = document.querySelector("#nazwisko").value
+            const email = document.querySelector("#email").value
+            const problem = document.querySelector("#zgloszenie").value
+            document.querySelector("#wynik").innerHTML=`${imie} ${nazwisko}<br> ${email}<br> Usługa ${problem}`
+        }
+    </script>
+</body>
+</html>

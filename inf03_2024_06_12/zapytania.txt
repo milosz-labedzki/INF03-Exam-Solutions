@@ -1,0 +1,7 @@
+SELECT imie,pensja FROM `pracownicy` WHERE staz <5;
+
+SELECT AVG(pensja),nazwa FROM `pracownicy`,stanowiska WHERE pracownicy.stanowiska_id=stanowiska.id GROUP BY pensja;
+
+SELECT imie,nazwisko,pensja FROM `pracownicy` WHERE pensja = (SELECT MAX(pensja) FROM pracownicy);
+
+UPDATE `pracownicy` SET staz=staz+1 WHERE 1;

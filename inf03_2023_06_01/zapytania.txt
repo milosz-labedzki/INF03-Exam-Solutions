@@ -1,0 +1,7 @@
+SELECT nazwa FROM `towary` WHERE promocja = TRUE;
+
+SELECT cena FROM `towary` WHERE nazwa='Markery 4 szt.';
+
+SELECT dostawcy.id,dostawcy.nazwa,COUNT(towary.id) AS 'liczba_towarow' FROM `towary`,dostawcy WHERE towary.idDostawcy=dostawcy.id GROUP BY towary.idDostawcy;
+
+ALTER TABLE `dostawcy` ADD `informacje` TEXT;

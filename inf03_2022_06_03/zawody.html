@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawody wędkarskie</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+    <section id="ulozenie_1">
+    <aside id="lewy">
+            <h1>Zawody polski wędkarzy</h1>
+    </aside>
+
+
+    <aside id="prawy">
+        <img src="zawody.jpg" alt="wędkowanie">
+    </aside>
+</section>
+
+    <main>
+            <h3>Łowiska</h3>
+            <ul>
+                <li>Zalew Węgrorwski</li>
+                <li>Zbiornik Bukówka</li>
+                <li>Jezioro Bartbetowskie</li>
+                <li>Warta-Obrzycko</li>
+            </ul>
+            <h3>
+                Dodaj zawody wędkarskie
+            </h3>
+            <form action="zgloszenie.php" method="POST"><br>
+                Łowisko <input type="number" name="lowisko"><br>
+                Data: <input type="date" name="data"><br>
+                Sędzia <input type="text" name="sedzia"><br>
+                <button type="reset">CZYŚĆ</button>
+                <button type="submit">DODAJ</button>
+            </form>
+    </main>
+
+    <section id="ulozenie_2">
+    <footer id="pierwszy">  
+        <a href="zapytania.txt">Pobierz</a>
+    </footer>
+
+
+    <footer id="drugi">
+        <p>Stronę przygotował: brr brr</p>
+    </footer>
+    </section>
+</body>
+</html>

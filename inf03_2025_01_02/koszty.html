@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaż paneli podłogowych</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Obraz montaz_paneli.png" alt="firma usługowa">
+    </header>
+
+
+    <menu>
+        <a href="index.php">Strona główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="koszty.html">Kalkulator kosztow</a>
+    </menu>
+
+
+    <main>
+        <h1>Kalkulator kosztów montażu</h1>
+        <label for="szerokosc">Szerokosc pomieszczenia[m]:<input type="number" name="szerokosc" id="szerokosc"></label>
+        <label for="dlugosc">Długość pomieszczenia [m]: <input type="number" name="dlugosc" id="dlugosc"></label>
+        <p>Typ panelu</p>
+        <input type="radio" name="panel" id="laminowane" value="12">Panele laminowane<br>
+        <input type="radio" name="panel" id="winylowe" value="14">Panele winylowe<br>
+        <input type="radio" name="panel" id="deska" value="18">Deska podłogowa<br>
+        <button type="button" onclick="skrypt1()">Oblicz</button>
+        <p id="wynik"></p>
+    </main>
+
+
+    <footer>
+        <h5>Autor strony: brr brr</h5>
+    </footer>
+    <script>
+        function skrypt1(){
+            let szerokosc = document.querySelector("#szerokosc").value
+            let dlugosc = document.querySelector("#dlugosc").value
+            let laminowane = document.querySelector("#laminowane").value
+            let winylowe = document.querySelector("#winylowe").value
+            let deska = document.querySelector("#deska").value
+            let pole = szerokosc*dlugosc;
+
+            let sprawdz_lamin =  document.querySelector("#laminowane").checked
+            let sprawdz_winyl =  document.querySelector("#winylowe").checked
+            let sprawdz_deska =  document.querySelector("#deska").checked
+            if(szerokosc != "" && dlugosc !=""){
+                if(sprawdz_lamin){
+                    let wynik = szerokosc * dlugosc * laminowane;
+                    document.querySelector("#wynik").innerHTML=`Pole powierzchni pomieszczenia: ${pole},  koszt montażu ${wynik}`
+                }
+                else if(sprawdz_winyl){
+                    let wynik = szerokosc * dlugosc * winylowe;
+                    document.querySelector("#wynik").innerHTML=`Pole powierzchni pomieszczenia: ${pole},  koszt montażu ${wynik}`
+                }
+                else if(sprawdz_deska){
+                    let wynik = szerokosc * dlugosc * deska;
+                    document.querySelector("#wynik").innerHTML=`Pole powierzchni pomieszczenia: ${pole},  koszt montażu ${wynik}`
+                }
+            }
+            else{
+                document.querySelector("#wynik").innerHTML="Wprowadź poprawne dane."
+            }
+        }
+    </script>
+</body>
+</html>

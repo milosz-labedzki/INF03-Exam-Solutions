@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <section id="kontener">
+
+        <header>
+            <img src="animacja.gif" alt="Pogotowie komputerowe">
+        </header>
+
+    
+        <menu>
+            <a href="index.php">Strona Główna</a>
+            <a href="kontakt.html">Kontakt</a>
+        </menu>
+
+<section id="ulozenie">
+        <main id="pierwszy">
+            <h3>Kim jesteśmy?</h3>
+            <p>Jesteśmy firmą z wieloletnim doświadczeniem w zakresie IT</p>
+        </main>
+
+
+        <main id="drugi">
+            <h3>Co robimy?</h3>
+            <ul>
+                <li>naprawa komputerów</li>
+                <li>odzyskiwanie danych</li>
+                <li>wirusy</li>
+                <li>konfiguracja LAN</li>
+            </ul>
+        </main>
+
+
+        <main id="trzeci">
+            <h3>Jaki jest nasz znak?</h3>
+            <img src="favicon.png" alt="Doświadczenie i niezawodność">
+        </main>
+
+</section>
+        <footer>
+            <em>Autor: brr brr</em>
+        </footer>
+
+    </section>
+</body>
+</html>
