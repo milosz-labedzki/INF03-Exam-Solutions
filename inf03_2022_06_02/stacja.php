@@ -47,7 +47,7 @@
 
 </section>
     <footer>
-        <p>Stronę wykonał" brr brr</p>
+        <p>Stronę wykonał" Miczek</p>
     </footer>
 </body>
 </html>
