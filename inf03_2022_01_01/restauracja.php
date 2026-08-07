@@ -41,7 +41,7 @@
 
 
     <footer>
-        <p>Stronę opracował: <em>brr brr</em></p>
+        <p>Stronę opracował: <em>Miczek</em></p>
     </footer>
 </body>
 </html>
