@@ -1,0 +1,9 @@
+SELECT id,imie,nazwisko FROM `maturzysta` WHERE szkola = 'T3' ORDER BY nazwisko;
+
+SELECT DISTINCT przedmiot FROM `arkusz`;
+
+SELECT MAX(rok), MIN(rok) FROM `arkusz`;
+
+SELECT maturzysta.id,AVG(punkty) AS 'wynik' FROM `wynik`,maturzysta WHERE wynik.maturzysta_id=maturzysta.id GROUP BY maturzysta.id ORDER BY wynik DESC LIMIT 1;
+
+SELECT rok,sesja,przedmiot,punkty FROM `arkusz`,wynik WHERE wynik.symbol=arkusz.symbol AND maturzysta_id=31;
