@@ -80,5 +80,6 @@
     <footer>
         <p>Stronę opracował: brr brr</p>
     </footer>
+    <?php mysqli_close($conn)?>
 </body>
 </html>
