@@ -57,7 +57,7 @@
     </main>
 
     <footer>
-            <p>Stronę opracował: brr brr</p>
+            <p>Stronę opracował: Miczek</p>
     </footer>
     <?php mysqli_close($conn)?>
 </body>
