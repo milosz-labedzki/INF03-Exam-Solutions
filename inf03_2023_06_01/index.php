@@ -68,7 +68,7 @@
   </section>        
         
         <footer>
-        <h4>Autor strony: brr brr</h4>
+        <h4>Autor strony: Miczek</h4>
     </footer>
     <?php mysqli_close($conn)?>
 </body>
