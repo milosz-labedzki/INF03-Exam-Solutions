@@ -33,7 +33,7 @@
 
 
         <footer>
-            <strong>Autor strony: brr brr</strong>
+            <strong>Autor strony: Miczek</strong>
         </footer>
     </section>
 </body>
