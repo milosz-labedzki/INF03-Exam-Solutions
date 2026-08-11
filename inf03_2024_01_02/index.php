@@ -45,7 +45,7 @@
 
 </section>
         <footer>
-            <em>Autor: brr brr</em>
+            <em>Autor: Miczek</em>
         </footer>
 
     </section>
