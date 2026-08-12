@@ -50,7 +50,7 @@
 </section>
     <footer>
         <a href="sierpien.html">Terminarz na sierpień</a>
-        <p>Stronę wykonał: brr brr</p>
+        <p>Stronę wykonał: Miczek</p>
     </footer>
     <?php mysqli_close($conn)?>
 </body>
