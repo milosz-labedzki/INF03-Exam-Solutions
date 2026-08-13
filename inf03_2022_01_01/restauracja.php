@@ -41,7 +41,7 @@
 
 
     <footer>
-        <p>Stronę opracował: <em>Miczek</em></p>
+        <p>Stronę opracował: <em>Miłosz Łabędzki</em></p>
     </footer>
 </body>
 </html>
