@@ -74,7 +74,7 @@
 
 </section>
     <footer>
-        <h4>Witrynę wykonał: Miczek</h4>
+        <h4>Witrynę wykonał: Miłosz Łabędzki</h4>
     </footer>
     </main>
     <?php mysqli_close($conn)?>
