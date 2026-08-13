@@ -67,7 +67,7 @@
 
 </section>
     <footer>
-        <p>Projekt witryny: Miczek</p>
+        <p>Projekt witryny: Miłosz Łabędzki</p>
     </footer>
     <?php mysqli_close($conn)?>
 </body>
