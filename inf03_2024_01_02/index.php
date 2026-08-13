@@ -45,7 +45,7 @@
 
 </section>
         <footer>
-            <em>Autor: Miczek</em>
+            <em>Autor: Miłosz Łabędzki</em>
         </footer>
 
     </section>
