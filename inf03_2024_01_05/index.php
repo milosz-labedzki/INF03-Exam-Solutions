@@ -48,7 +48,7 @@
 </section>
 </main>
     <footer>
-        <p>Autor: Miczek</p>
+        <p>Autor: Miłosz Łabędzki</p>
     </footer>
     <script>
         function skrypt1(){
