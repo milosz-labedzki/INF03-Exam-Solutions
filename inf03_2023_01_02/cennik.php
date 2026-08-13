@@ -50,7 +50,7 @@
 </section>
 
     <footer>
-            <p>Stronę opracował: Miczek</p>
+            <p>Stronę opracował: Miłosz Łabędzki</p>
     </footer>
     <?php mysqli_close($conn)?>
 </body>
