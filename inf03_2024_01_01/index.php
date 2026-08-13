@@ -33,7 +33,7 @@
 
 
         <footer>
-            <strong>Autor strony: Miczek</strong>
+            <strong>Autor strony: Miłosz Łabędzki</strong>
         </footer>
     </section>
 </body>
