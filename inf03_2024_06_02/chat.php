@@ -46,7 +46,7 @@
 
 
     <footer>
-        <h5>Chat wykonał: brr brr</h5>
+        <h5>Chat wykonał: Miłosz Łabędzki</h5>
     </footer>
     <script>
         function skrypt1(){
