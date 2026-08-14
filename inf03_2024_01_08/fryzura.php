@@ -64,7 +64,7 @@
     </aside>
 </main>
     <footer>
-        <p>Autor: brr brr</p>
+        <p>Autor: Miłosz Łabędzki</p>
     </footer>
     <script>
         function skrypt1(){
