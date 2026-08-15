@@ -70,7 +70,7 @@
     </section>
 </main>
     <footer>
-        <h5>Stronę wykonał: brr brr</h5>
+        <h5>Stronę wykonał: Miłosz Łabędzki</h5>
     </footer>
 </body>
 </html>
