@@ -60,7 +60,7 @@
 
 
     <footer id="foot4">
-        <p>Formularz wykonał: brr brr</p>
+        <p>Formularz wykonał: Miłosz Łabędzki</p>
     </footer>
     <script>
         function skrypt1(){
