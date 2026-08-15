@@ -97,7 +97,7 @@ function skrypt4(){
 
 
     <footer>
-        <p>Stronę wykonał: brr brr</p>
+        <p>Stronę wykonał: Miłosz Łabędzki</p>
         <p><a href="http://firmy.pl/komis">Znajdź nas także</a></p>
     </footer>
 </body>
