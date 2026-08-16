@@ -68,7 +68,7 @@
     </section>
 
     <footer>
-        <h4>Rejestrację do sklepu wykonał: brr brr</h4>
+        <h4>Rejestrację do sklepu wykonał: Miłosz Łabędzki</h4>
     </footer>
     <script>
         let szerokosc = 4;
