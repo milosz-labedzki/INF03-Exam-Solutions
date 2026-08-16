@@ -37,7 +37,7 @@
     </section>
 
     <footer>
-        <h3>Autorem galerii jest: <p>brr brr</p></h3>
+        <h3>Autorem galerii jest: <p>Miłosz Łabędzki</p></h3>
         <a href="http://pixabay.com" target="_blank">Więcej zdjęć</a>
     </footer>
     <script>
