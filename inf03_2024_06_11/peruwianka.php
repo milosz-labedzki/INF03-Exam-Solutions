@@ -82,7 +82,7 @@
 </section>
 
     <footer>
-        <p>Stronę wykonał brr brr</p>
+        <p>Stronę wykonał Miłosz Łabędzki</p>
     </footer>
 </body>
 </html>
