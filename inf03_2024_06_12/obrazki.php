@@ -47,7 +47,7 @@
 
     <footer>
         <p><a href="http://www.css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
-        <p>Stronę wykonał: brr brr</p>
+        <p>Stronę wykonał: Miłosz Łabędzki</p>
     </footer>
     <script>
         function skrypt1(){
