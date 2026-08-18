@@ -168,7 +168,7 @@
 </main>
 
     <footer>
-        <p>Stronę opracował: brr brr</p>
+        <p>Stronę opracował: Miłosz Łabędzki</p>
     </footer>
 </body>
 </html>
