@@ -75,7 +75,7 @@
 
 
     <footer>
-        <p>Stronę opracował:<em> brr brr</em></p>
+        <p>Stronę opracował:<em> Miłosz Łabędzki</em></p>
     </footer>
     <script>
         function skrypt1(){
