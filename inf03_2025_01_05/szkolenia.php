@@ -51,7 +51,7 @@
 
         <footer>
             <h2>Firma szkoleniowa, ul.Główna 1,23-456 Warszawa</h2>
-            <p>Autor: brrbrr</p>
+            <p>Autor: Miłosz Łabędzki</p>
         </footer>
     </section>
 </body>
