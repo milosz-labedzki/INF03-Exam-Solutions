@@ -58,7 +58,7 @@
 
 
     <footer>
-        <p>Autor strony: brrbrr</p>
+        <p>Autor strony: Miłosz Łabędzki</p>
     </footer>
 </body>
 </html>
