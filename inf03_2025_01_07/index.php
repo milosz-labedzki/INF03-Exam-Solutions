@@ -53,7 +53,7 @@
 
         <aside id="lewy_dol">
             <p>Egzamin INF.03</p>
-            <p>Autor: brr brr</p>
+            <p>Autor: Miłosz Łabędzki</p>
         </aside>
     </section>
 </body>
