@@ -74,7 +74,7 @@
 
 
     <footer>
-        <p>AUTOR brr brr </p><br>
+        <p>AUTOR Miłosz Łabędzki</p><br>
         <p>Data 18.04.2115</p>
     </footer>
 
