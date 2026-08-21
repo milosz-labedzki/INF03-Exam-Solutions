@@ -54,7 +54,7 @@
 
 
         <footer>
-            <p>Numer zdajacego: brrbrr</p>
+            <p>Numer zdajacego: Miłosz Łabędzki</p>
         </footer>
 </body>
 </html>
