@@ -75,7 +75,7 @@
 
     <footer>
         <p>AUTOR Miłosz Łabędzki</p><br>
-        <p>Data 18.04.2115</p>
+        <p>Data 18.04.2026</p>
     </footer>
 
 
