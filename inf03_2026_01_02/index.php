@@ -78,7 +78,7 @@
 
 
     <footer>
-        <p>Stronę opracował: brr brr</p>
+        <p>Stronę opracował: Miłosz Łabędzki</p>
     </footer>
     <?php mysqli_close($conn)?>
 </body>
