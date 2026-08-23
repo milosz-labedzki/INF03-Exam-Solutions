@@ -96,7 +96,7 @@
 </div>
 </main>
     <footer>
-        <p>Stronę wykonał: Miczek</p>
+        <p>Stronę wykonał: Miłosz Łabędzki</p>
     </footer>
     <?php mysqli_close($conn)?>
 </body>
