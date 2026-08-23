@@ -79,7 +79,7 @@
 
 
     <footer>
-        <p>Stronę obracował: Miczek</p>
+        <p>Stronę obracował: Miłosz Łabędzki</p>
     </footer>
     <img src="zdrowia.png" alt="Życzymy zdrowia!">
     <?php mysqli_close($conn)?>
