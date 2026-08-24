@@ -67,7 +67,7 @@
 
 
     <footer id="stopka_druga">
-        <h3>&copy; Wykonane przez: Mizcek</h3>
+        <h3>&copy; Wykonane przez: Miłosz Łabędzki</h3>
     </footer>
     </div>
     <?php mysqli_close($conn)?>
