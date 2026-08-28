@@ -4,7 +4,6 @@
 
 Worked solutions for the INF.03 vocational qualification practical exam (HTML, CSS, JavaScript, PHP, MySQL) — 2022–2026. Archived, all sessions completed.
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/milosz-labedzki/INF03-Exam-Solutions?style=for-the-badge&color=blue)](https://github.com/milosz-labedzki/INF03-Exam-Solutions/commits/main)
 [![Language](https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JS%20%7C%20PHP%20%7C%20MySQL-orange?style=for-the-badge)](#)
 
 </div>
