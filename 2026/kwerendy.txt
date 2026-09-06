@@ -1,7 +1,0 @@
-SELECT nazwa,nazwaNaukowa, sredniaDlugoscZycia FROM `gatunki` WHERE rodzaj = 1 ORDER BY sredniaDlugoscZycia DESC;
-
-SELECT drzewa.id, stanZdrowia, nazwa FROM `drzewa`,gatunki WHERE drzewa.gatunek_id = gatunki.id AND dataPosadzenia = '2008-06-06';
-
-SELECT rodzaj, COUNT(rodzaj) AS 'ilość' FROM `gatunki` GROUP BY rodzaj;
-
-SELECT gatunki.nazwa, drzewa.dataPosadzenia, drzewa.stanZdrowia FROM `drzewa`,gatunki,lokalizacje WHERE gatunki.id = drzewa.gatunek_id AND drzewa.lokalizacja_id = lokalizacje.id AND opis = 'Gdańsk, Polska' AND nazwa LIKE '%a';
