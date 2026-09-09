@@ -2,10 +2,10 @@
 
 # INF.03 Exam Solutions
 
-Worked solutions for the INF.03 vocational qualification practical exam (HTML, CSS, JavaScript, PHP, MySQL) — 2022–2026. Archived, all sessions completed.
+Worked solutions for the INF.03 vocational qualification practical exam (HTML, CSS, JavaScript, PHP, MySQL) — 2022–2026.
 
 [![Language](https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JS%20%7C%20PHP%20%7C%20MySQL-orange?style=for-the-badge)](#)
-[![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)](#)
+[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge)](#)
 
 </div>
 
@@ -24,8 +24,6 @@ Worked solutions for the INF.03 practical exam (*Tworzenie i administrowanie str
 * **Database:** MySQL/MariaDB (relational schema design, SELECT/INSERT/UPDATE queries, joins).
 
 ---
-
-
 
 ## Disclaimer
 
