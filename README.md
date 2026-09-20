@@ -6,6 +6,7 @@ Worked solutions for the INF.03 vocational qualification practical exam (HTML, C
 
 [![Language](https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JS%20%7C%20PHP%20%7C%20MySQL-orange?style=for-the-badge)](#)
 [![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge)](#)
+[![GitHub last commit](https://img.shields.io/github/last-commit/milosz-labedzki/Tryhackme-Labs?style=for-the-badge&color=blue)](https://github.com/milosz-labedzki/Tryhackme-Labs/commits/main)
 
 </div>
 
