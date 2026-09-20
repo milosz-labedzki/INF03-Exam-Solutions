@@ -1,0 +1,7 @@
+SELECT idObiekt,plik,nazwa FROM `obiekty` WHERE panstwo = 'Islandia';
+
+SELECT plik,nazwa,nazwaCechy,wartoscCechy,opis,rodzaj FROM `obiekty` JOIN rodzaje ON rodzaje.idRodzaj = obiekty.idRodzaj WHERE idObiekt = 46;
+
+SELECT nazwa FROM `obiekty` WHERE panstwo = 'Islandia' AND idRodzaj = 10;
+
+SELECT rodzaj, COUNT(idObiekt) as 'Liczba obiektów' FROM `rodzaje` JOIN obiekty ON rodzaje.idRodzaj = obiekty.idRodzaj GROUP BY rodzaj;
