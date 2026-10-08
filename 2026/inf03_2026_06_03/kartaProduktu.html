@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotel</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+ 
+    <header>
+        <h1>Sklep meblowy</h1>
+        <hr>
+    </header>
+
+
+    <main>
+
+
+        <section>
+                <img src="pliki3/fotele1.png" alt="fotel" class="obraz" id="glowny_obraz" onclick="otworz_okno()"><br>
+                <img src="pliki3/fotele1.png" alt="miniatura" class="miniatury" onclick="skrypt1('pliki3/fotele1.png')">
+                <img src="pliki3/fotele2.png" alt="miniatura" class="miniatury" onclick="skrypt1('pliki3/fotele2.png')">
+                <img src="pliki3/fotele3.png" alt="miniatura" class="miniatury" onclick="skrypt1('pliki3/fotele3.png')">
+                <div class="okno">
+                    <span class="zamknij" onclick="skrypt2()">&times;</span>
+                    <img src="" class="obrazOkno">
+                </div>
+        </section>
+
+
+        <article>
+            <h2>Żółty Fotel</h2>
+            <p>Nasz żółty fotel może być przygotowany w trzech wariantach, które można przeglądać na grafikach. Jest wygodny i elegancki. Wariant 1 polecamy do wnętrz klasycznych. Wariant 3 jest utrzymany w stylu glamour, a guzik na środku oparcia jest wykonany z kryształka. Wygodne podłokietniki sprawiają, że w tym fotelu naprawdę się odpoczywa. Wykonany z elastycznej pianki - materiału, który wyróżnia się plastycznością oraz sprężystością, zapewniając komfort siedzenia. </p>
+            <p>Zorganizujemy dla Ciebie bezpłatną dostawę oraz wniesiemy towar.</p>
+            <strong>Wybierz wariant fotela</strong>
+            <select id="wariant">
+                <option value="wariant 1">wariant 1</option>
+                <option value="wariant 2">wariant 2</option>
+                <option value="wariant 3">wariant 3</option>
+            </select>
+            <p><button>KUP TERAZ</button></p>
+            <p><a href="sklep.html">Do strony głównej</a></p>
+        </article>
+
+
+    </main>
+
+
+    <footer>
+            <hr>
+            <p>Autor strony: <em>Miłosz Łabędzki</em></p>
+    </footer>
+
+
+    <script>
+        let source = 'pliki3/fotele1.png'
+        function skrypt1(zrodlo){
+            source = zrodlo
+            let obraz = document.querySelector("#glowny_obraz").src=source
+        }
+        function otworz_okno(){
+            let okno = document.querySelector(".okno")
+            okno.style="display: block"
+            let obraz = document.querySelector(".obrazOkno").src = source
+        }
+        function skrypt2(){
+            let okno = document.querySelector(".okno")
+            okno.style="display: none"
+        }
+    </script>
+</body>
+</html>
