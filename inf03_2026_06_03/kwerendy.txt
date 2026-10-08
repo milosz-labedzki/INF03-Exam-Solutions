@@ -1,7 +1,0 @@
-SELECT nazwa,styl,cena FROM `meble` WHERE czyNowy = 1 AND cena < 1000 ORDER BY cena ASC;
-
-CREATE VIEW komody AS SELECT idMeble,nazwa,kategoria,cena FROM meble WHERE kategoria = 3;
-
-SELECT ROUND(AVG(cena),0) AS 'Średnia cena komód', MIN(cena) AS 'Minimalna', MAX(cena) AS 'Maksymalna' FROM `komody`;
-
-DELETE FROM klienci WHERE imie = 'Tomasz' AND nazwisko = 'Nowak';
