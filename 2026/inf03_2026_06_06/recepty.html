@@ -1,0 +1,109 @@
+    <script>
+        function skrypt1(){
+        var pacjenci = {
+        "id": "1",
+        "imie": "Agnieszka",
+        "nazwisko": "Nowak",
+        "wystawca": "lek. Marian Kowal",
+        "numer": "4387203",
+        "recepty": [
+            {"id": "0",  "data": "8.03.2025", "kod": "1220", "lek1": "Witamina C", "lek2": "Potas", "lek3": "Syrop prawoślazowy"},    
+            {"id": "1",  "data": "23.04.2025", "kod": "4634", "lek1": "APAP", "lek2": "Witamina B", "lek3": ""},    
+            {"id": "2",  "data": "13.05.2025", "kod": "2913", "lek1": "Melatonina", "lek2": "", "lek3": ""},    
+            {"id": "3",  "data": "30.10.2025", "kod": "1105", "lek1": "Witamina C", "lek2": "Calcium", "lek3": "Sinupret"}
+            ]
+        };
+
+
+
+        let prawy = document.querySelector("#prawy_2")
+        let i = 0
+        let tekst = ""
+        while(pacjenci.recepty[i]){
+            let div = document.createElement('div')
+            div.classList.add("recepty")
+            
+            if(pacjenci.recepty[i].lek2 == ""){
+                tekst = `<p>Data wystawienia ${pacjenci.recepty[i].data}</p>
+                <ol><li>${pacjenci.recepty[i].lek1}</li></ol>
+                <h4>Kod ${pacjenci.recepty[i].kod}</h4>`
+            }
+            else if(pacjenci.recepty[i].lek3 == ""){
+                tekst = `<p>Data wystawienia ${pacjenci.recepty[i].data}</p>
+                <ol><li>${pacjenci.recepty[i].lek1}</li> <li>${pacjenci.recepty[i].lek2}</li></ol>
+                <h4>Kod ${pacjenci.recepty[i].kod}</h4>`
+            }
+            
+            else{
+                tekst = `<p>Data wystawienia ${pacjenci.recepty[i].data}</p>
+                <ol><li>${pacjenci.recepty[i].lek1}</li><li>${pacjenci.recepty[i].lek2}</li><li>${pacjenci.recepty[i].lek3}</li></ol>
+                <h4>Kod ${pacjenci.recepty[i].kod}</h4>`
+            }
+
+            div.innerHTML=tekst
+            prawy.append(div)
+            i++
+        }
+    
+        }
+    
+    </script>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konto pacjenta</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+            <h2>Strefa pacjenta</h2>
+    </header>
+
+    
+    <nav>
+        <a href="index.html">Strefa pacjenta</a>
+        <a href="receply.html">Recepty</a>
+        <a href="skierowania.html">Skierowania</a>
+    </nav>
+
+
+    <main>
+        <div id="lewe">
+        <section id="lewy_1">
+            <img src="pliki7/pacjent.png" alt="dane pacjenta">
+            <h3>Dane pacjenta</h3>
+            <p>Agnieszka</p>
+            <p>Nowak</p>
+        </section>
+
+
+        <section id="lewy_2">
+                <img src="pliki7/lekarz.png" alt="dane lekarza">
+                <h3>Dane lekarza</h3>
+                <p>lek. Marian Kowal</p>
+                <p>numer PWZ: 4387203</p>
+        </section>
+        </div>
+        <div id="prawe">
+        <section id="prawy_1">
+            <img src="pliki7/recepta.png" alt="dane recept">
+            <h3>Dane recept</h3>
+        </section>
+
+
+        <section id="prawy_2">
+                <script>skrypt1()</script>
+        </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Autor strony: <em>Miłosz Łabędzki</em></p>
+    </footer>
+
+</body>
+</html>
