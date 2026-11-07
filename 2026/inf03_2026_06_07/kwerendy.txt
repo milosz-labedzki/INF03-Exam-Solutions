@@ -1,0 +1,8 @@
+SELECT nazwa,potrzebne FROM `grytowarzyskie` WHERE liczbaGraczy > 4;
+
+SELECT AVG(czasRozgrywki) as 'średnia w minutach' FROM `grytowarzyskie` WHERE liczbaGraczy = 2;
+
+SELECT nazwa FROM `grytowarzyskie` WHERE czasRozgrywki = (SELECT MAX(czasRozgrywki) FROM grytowarzyskie);
+
+SELECT nazwa FROM `grytowarzyskie` WHERE potrzebne LIKE '%karty%' AND liczbaGraczy < 4;
+
