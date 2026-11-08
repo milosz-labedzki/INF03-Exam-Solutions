@@ -22,19 +22,19 @@
     <section id="srodek">
             <table>
                 <tr>
-                    <td><img src="nic.png" onclick="skrypt1('pierwszy')" id="pierwszy"></td>
-                    <td><img src="nic.png" onclick="skrypt1('drugi')" id="drugi"></td>
-                    <td><img src="nic.png" onclick="skrypt1('trzeci')" id="trzeci"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="pierwszy"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="drugi"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="trzeci"></td>
                 </tr>
                 <tr>
-                    <td><img src="nic.png" onclick="skrypt1('czwarty')" id="czwarty"></td>
-                    <td><img src="nic.png" onclick="skrypt1('piaty')" id="piaty"></td>
-                    <td><img src="nic.png" onclick="skrypt1('szosty')" id="szosty"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="czwarty"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="piaty"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="szosty"></td>
                 </tr>
                 <tr>
-                    <td><img src="nic.png" onclick="skrypt1('siodmy')" id="siodmy"></td>
-                    <td><img src="nic.png" onclick="skrypt1('osmy')" id="osmy"></td>
-                    <td><img src="nic.png" onclick="skrypt1('dziewiaty')" id="dziewiaty"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="siodmy"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="osmy"></td>
+                    <td><img src="nic.png" onclick="skrypt1(this)" id="dziewiaty"></td>
                 </tr>
             </table>
     </section>
@@ -53,8 +53,7 @@
     </footer>
     <script>
         let gracz = 'kolko'
-        function skrypt1(miejsce){
-           let pole = document.getElementById(miejsce)
+        function skrypt1(pole){
             
 
                 if(gracz == 'kolko'){
