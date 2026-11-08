@@ -22,19 +22,19 @@
     <section id="srodek">
             <table>
                 <tr>
-                    <td><img src="nic.png" onclick="skrypt1('pierwsze')" id="pierwszy"></td>
-                    <td><img src="nic.png" onclick="skrypt1('drugie')" id="drugi"></td>
-                    <td><img src="nic.png" onclick="skrypt1('trzecie')" id="trzeci"></td>
+                    <td><img src="nic.png" onclick="skrypt1('pierwszy')" id="pierwszy"></td>
+                    <td><img src="nic.png" onclick="skrypt1('drugi')" id="drugi"></td>
+                    <td><img src="nic.png" onclick="skrypt1('trzeci')" id="trzeci"></td>
                 </tr>
                 <tr>
-                    <td><img src="nic.png" onclick="skrypt1('czwarte')" id="czwarty"></td>
-                    <td><img src="nic.png" onclick="skrypt1('piate')" id="piaty"></td>
-                    <td><img src="nic.png" onclick="skrypt1('szoste')" id="szosty"></td>
+                    <td><img src="nic.png" onclick="skrypt1('czwarty')" id="czwarty"></td>
+                    <td><img src="nic.png" onclick="skrypt1('piaty')" id="piaty"></td>
+                    <td><img src="nic.png" onclick="skrypt1('szosty')" id="szosty"></td>
                 </tr>
                 <tr>
-                    <td><img src="nic.png" onclick="skrypt1('siodme')" id="siodmy"></td>
-                    <td><img src="nic.png" onclick="skrypt1('osme')" id="osmy"></td>
-                    <td><img src="nic.png" onclick="skrypt1('dziewiate')" id="dziewiaty"></td>
+                    <td><img src="nic.png" onclick="skrypt1('siodmy')" id="siodmy"></td>
+                    <td><img src="nic.png" onclick="skrypt1('osmy')" id="osmy"></td>
+                    <td><img src="nic.png" onclick="skrypt1('dziewiaty')" id="dziewiaty"></td>
                 </tr>
             </table>
     </section>
@@ -52,27 +52,33 @@
         <p>Grę opracował: Miłosz Łabędzki</p>
     </footer>
     <script>
+        let gracz = 'kolko'
         function skrypt1(miejsce){
-            let pierwszy = document.querySelector("#pierwszy")
-            let drugi = document.querySelector("#drugi")
-            let trzeci = document.querySelector("#trzeci")
-            let czwarty = document.querySelector("#czwarty")
-            let piaty = document.querySelector("#piaty")
-            let szosty = document.querySelector("#szosty")
-            let siodmy = document.querySelector("#siodmy")
-            let osmy = document.querySelector("#osmy")
-            let dziewiaty = document.querySelector("#dziewiaty")
+           let pole = document.getElementById(miejsce)
             
-            let lewy = document.querySelector("#lewy")
-            let prawy = document.querySelector("#prawy")
 
-            let gracz = 'kolko'
-            if(gracz == 'kolko'){
-                pierwszy.src='o.png'
-                lewy.style.visibility='hidden'
-                prawy.style.visibility='visible'
-                let gracz = 'iks'
-            }
+                if(gracz == 'kolko'){
+                    if(pole.getAttribute('src')=='nic.png'){
+                        pole.src='o.png'
+                        lewy.style.visibility='hidden'
+                        prawy.style.visibility='visible'
+                        gracz = 'iks'
+                    }
+                }
+
+            
+                else if(gracz == 'iks'){
+                    if(pole.getAttribute('src')=='nic.png'){
+                        pole.src='x.png'
+                        lewy.style.visibility='visible'
+                        prawy.style.visibility='hidden'
+                        gracz = 'kolko'
+                    }
+                }
+            
+
+
+
         }
     </script>
 </body>
