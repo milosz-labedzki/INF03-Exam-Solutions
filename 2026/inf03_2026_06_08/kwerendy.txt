@@ -1,0 +1,7 @@
+SELECT tytul,gatunek FROM `gry` WHERE data_wydania > '2018-00-00' AND data_wydania < '2023-00-00' AND gatunek LIKE '%Niezależne%';
+
+SELECT nazwa,COUNT(gry.id_producenta) AS 'liczba_gier' FROM `producenci` LEFT JOIN gry ON producenci.id_producenta = gry.id_producenta GROUP BY gry.id_producenta;
+
+SELECT gry.id_gry,gry.tytul,producenci.nazwa AS 'producent',wydawcy.nazwa AS 'wydawcy' FROM `gry` JOIN producenci ON producenci.id_producenta=gry.id_producenta JOIN wydawcy ON wydawcy.id_wydawcy = gry.id_wydawcy;
+
+ALTER TABLE `gry` ADD `ocena` FLOAT NOT NULL DEFAULT 5 AFTER `data_wydania`;

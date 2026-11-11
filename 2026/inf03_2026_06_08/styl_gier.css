@@ -1,0 +1,42 @@
+*{
+    font-family: 'Segoe UI',Tahoma;
+}
+#pierwszy{
+    width: 40%;
+}
+#drugi{
+    width: 60%;
+    text-align: right;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: #0077A2;
+}
+li a{
+    padding: 1em;
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 20em;
+    margin: 1em;
+}
+img:hover{
+    outline: 3px dashed #E30613;
+}
+#naglowek{
+    display: flex;
+}
+main{
+    text-align: center;
+}
+main p{
+    text-align: left;
+}
