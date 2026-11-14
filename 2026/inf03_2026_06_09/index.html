@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauracja Marchewka</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+
+
+        <section id="lewy_hed">
+            <h1>Restauracja Marchewka</h1>
+            <h3>Twoje wegetariańskie miejsce na mapie miasta</h3>
+        </section>
+
+
+        <section id="prawy_hed">
+            <img src="pliki19/logo.png" alt="logo">
+        </section>
+
+
+    </header>
+
+
+    <main>
+        
+        
+        <section id="lewy_main">
+            <h4>Twoje zamówienie</h4>
+            <ul id="lista">
+                
+            </ul>
+            <button type="button" onclick="skrypt2()">Wyczyść</button>
+            <button type="button" onclick="skrypt3()">Zatwierdź</button>
+        </section>
+
+
+        <section id="prawy_main">
+            <div onclick="skrypt1('Naleśniki')" class="blok"><img src="pliki19/nalesniki.webp" alt="Naleśniki"> <p>Naleśniki</p></div>
+            <div onclick="skrypt1('Lasagne szpinakowa')" class="blok"><img src="pliki19/lasagne.webp" alt="Lasagne szpinakowa"> <p>Lasagne szpinakowa</p></div>
+            <div onclick="skrypt1('Pieczona marchewka')" class="blok"><img src="pliki19/marchewka.webp" alt="Pieczona marchewka"> <p>Pieczona marchewka</p></div>
+            <div onclick="skrypt1('Wege rosół')" class="blok"><img src="pliki19/rosol.webp" alt="Wege rosół"> <p>Wege rosół</p></div>
+            <div onclick="skrypt1('Tarta szparagowa')" class="blok"><img src="pliki19/tarta.webp" alt="Tarta szparagowa"> <p>Tarta szparagowa</p></div>
+            <div onclick="skrypt1('Kompot')" class="blok"><img src="pliki19/kompot.webp" alt="Kompot"> <p>Kompot</p></div>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <p>Wykonał: Miłosz Łabędzki</p>
+    </footer>
+    <script>
+        function skrypt1(danie){
+            let tekst = document.createElement("p")
+            let lista = document.querySelector("#lista")
+            tekst.innerHTML=`<li>${danie}</li>`
+            lista.appendChild(tekst)
+        }
+        function skrypt2(){
+            let lista = document.querySelector("#lista")
+            lista.innerHTML = ""
+        }
+        function skrypt3(){
+            let lista = document.querySelector("#lista")
+            lista.innerHTML = ""
+            alert("Zamówienie zostało przekazane do realizacji")
+        }
+    </script>
+</body>
+</html>

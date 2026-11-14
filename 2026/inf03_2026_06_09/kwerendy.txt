@@ -1,0 +1,9 @@
+SELECT imie,nazwisko FROM `kelnerzy` ORDER BY nazwisko DESC;
+
+SELECT COUNT(zamowienia.id), Stoliki.numerStolika FROM `zamowienia` JOIN Stoliki ON zamowienia.idStolika = stoliki.id WHERE numerStolika = 3;
+
+SELECT nazwa FROM `potrawy` JOIN Zamowieniapotrawy ON zamowieniapotrawy.idPotrawy = potrawy.id JOIN zamowienia ON zamowieniapotrawy.idZamowienia = zamowienia.id WHERE zamowienia.dataZlozenia LIKE '2024-06-09%';
+
+CREATE USER 'administrator'@'localhost' IDENTIFIED BY 'boss123!'
+
+ALTER TABLE `potrawy` CHANGE `cena` `cena` FLOAT(4,2) NOT NULL;
