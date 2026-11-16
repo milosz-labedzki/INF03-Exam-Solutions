@@ -1,0 +1,7 @@
+SELECT imie,nazwisko FROM `diagnosta` ORDER BY nazwisko DESC;
+
+SELECT COUNT(id),date(`data`) FROM `zlecenie` GROUP BY `data`;
+
+SELECT `data` FROM `zlecenie` JOIN pacjent ON pacjent.id = zlecenie.idPacjenta WHERE nazwisko = 'Nowicki';
+
+SELECT imie,nazwisko,pesel,zlecenie.data,plik FROM `Pacjent` LEFT JOIN zlecenie ON zlecenie.idPacjenta = pacjent.id LEFT JOIN Wynik ON Wynik.idZlecenia = zlecenie.id;
