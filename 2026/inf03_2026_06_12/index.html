@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon rowerowy</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body onload="skrypt3()">
+    <header>
+        <img src="pliki22/1.jpg" alt="rower">
+        <img src="pliki22/2.jpg" alt="rower">
+        <img src="pliki22/3.jpg" alt="rower">
+        <img src="pliki22/4.jpg" alt="rower">
+        <img src="pliki22/5.jpg" alt="rower">
+    </header>
+
+
+    <div id="glowny">
+
+    <main>
+        <h1>Dobierz rozmiar ramy roweru do wzrostu</h1>
+        <h2>Wybierz rodzaj roweru</h2>
+        <input type="radio" name="rower" id="gorski" value="0.26" checked> <label for="gorski" class="klasa_etykiety" title="górski z kołami 29">górski z kołami 29</label>
+        <input type="radio" name="rower" id="szosa" value="0.3"> <label for="szosa" class="klasa_etykiety" title="szosa">szosa</label>
+        <input type="radio" name="rower" id="trekking" value="0.28"><label for="trekking" class="klasa_etykiety" title="trekking">trekking</label>
+        <h2>Podaj swój wzrost</h2>
+        <input type="range" value="150" min="100" max="220" id="wzrost" onchange="skrypt1()">
+        <input type="number" value="150" id="wartosc">
+        <button type="button" class="klasa_etykiety" onclick="skrypt2()">Sprawdź</button>
+        <p id="wynik"></p>
+    </main>
+
+
+    <aside>
+        <h1>Polecane firmy</h1>
+        <p class="logo1 + prawa">cup</p>
+        <p class="logo2">glass</p>
+        <p class="logo1 + srodek">spoon</p>
+        <p class="logo2 + prawa"> teaspoon</p>
+        <p class="logo1">fork</p>
+    </aside>
+
+    </div>
+
+    <div id="stopka">
+
+
+    <footer id="lewy">
+            <h4>Oferowane typy rowerów</h4>
+            <ul>
+                <li>górskie
+                    <ul>
+                        <li>koła 29 cali</li>
+                        <li>koła 26 cali</li>
+                    </ul>
+                </li>
+                
+                <li>szosowe</li>
+                <li>miejskie</li>
+            </ul>
+    </footer>
+
+    
+    <footer id="prawy">
+        <h4>Informacje</h4>
+        <table>
+            <tr>
+                <td>Autor:</td>
+                <td>Miłosz Łabędzki</td>
+            </tr>
+            <tr>
+                <td>Aktualna data:</td>
+                <td id="data"></td>
+            </tr>
+        </table>
+    </footer>
+    </div>
+    <script>
+        function skrypt1(){
+            let liczba = document.querySelector("#wzrost").value
+            document.querySelector("#wartosc").value = liczba
+        }
+
+        function skrypt2(){
+            let liczba = document.querySelector("#wzrost").value
+            let rower = document.querySelector("input[name='rower']:checked")
+            let rozmiar = Math.ceil((liczba * rower.value) /2.54,0)
+            document.querySelector("#wynik").innerHTML = `Zalecany rozmiar ramy to: ${rozmiar} cali`
+        }
+
+        function skrypt3(){
+        let dzis = new Date()
+        let rok = dzis.getFullYear()
+        let miesiac = dzis.getMonth()
+        let dzien = dzis.getDate()
+        
+        let data = `${dzien}.${miesiac}.${rok}`
+
+        document.querySelector("#data").innerHTML=`${data}`
+        }
+    </script>
+</body>
+</html>
